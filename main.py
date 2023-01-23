@@ -8,7 +8,6 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-
 @app.route('/about')
 def about():
     return render_template('about.html')
@@ -21,6 +20,13 @@ def contacto():
 def profissoes():
     return render_template('profissoes.html')
 
+@app.route('/livros')
+def livros():
+    return render_template('livros.html')
+
+@app.route('/labz')
+def labz():
+    return render_template('labz.html')
 
 
 
